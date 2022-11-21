@@ -1,0 +1,250 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    margin: 5rem auto;
+    position: relative;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.sign-up-wrapper {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+}
+
+.sign-up-bg {
+    background: linear-gradient(to right, #3AB19A, #4CBF91);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem; */
+    border-radius: 2rem;
+    z-index: 99;
+    transition: .8s ease;
+}
+
+.sign-up-bg.animation {
+
+    width: 40%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: -1;
+}
+
+.left-form-bg {
+    width: 40%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.left-text {
+    transform: translateX(-500px);
+    transition: 0.8s ease;
+}
+
+.left-text.animation {
+    transform: translateX(0);
+}
+
+.left-text h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.left-text p {
+    font-size: 1.5rem;
+}
+
+.left-form-button {
+    margin-top: 8rem;
+}
+
+.cta {
+    background-color: transparent;
+    border: 0.1rem solid white;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 1.5rem 5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    transition: .8s ease;
+
+}
+
+.cta.animation {
+    left: 20%;
+}
+
+.right-form-bg {
+    width: 60%;
+    padding: 2rem 4rem;
+    background: #eee;
+    height: inherit;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+
+.right-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-300px);
+    align-items: center;
+    transition: .8s ease;
+}
+
+.right-form-content.animation {
+    transform: translateX(0px);
+}
+
+.right-form-content h2 {
+    color: #3AB19A;
+    font-size: 4.5rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid #555;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    transition: all .3s ease-out;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons i.fb:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: #1877F2;
+}
+
+.social-icons i.tw:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: #1DA1F2;
+}
+
+.social-icons i.in:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: #F55F06;
+}
+
+.right-form-content p {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-data {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+form input {
+    background: rgba(221, 221, 221, 0.514);
+    outline: none;
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+    color: #3AB19A;
+}
+
+form input:focus {
+    background: #3AB19A;
+    color: #fff;
+}
+
+.form-data i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    width: 1rem;
+    color: #3AB19A;
+    font-size: 1.5rem;
+}
+
+input:focus+.form-icon {
+    color: #fff;
+}
+
+.cta-right {
+    width: 16rem;
+    height: 5rem;
+    background-color: #3AB19A;
+    border: 0.1rem solid white;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 1.5rem 5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
